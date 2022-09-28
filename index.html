@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- <---------------Navbar------------->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Bootstrap</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#backdrop">LOG IN</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">HTML</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-------------------- Modal ----------------->
+  <div class="modal fade" id="backdrop">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container d-flex justify-content-center">
+            <div class="card bg-dark text-light my-3">
+                <div class="card-header border-bottom-1 border-white">
+                    <h3 class="display-5">Profile</h3>
+                </div>
+                <div class="card-body">
+                    <form action="table.html">
+                        <div class="row row-cols-md-2">
+                            <div class="first-name">
+                                <h5>First name</h5>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="username" placeholder="Your Username">
+                                    <label for="username" class="form-label text-black">Enter First Username</label>
+                                </div>
+                            </div>
+                            <div class="last-name">
+                                <h5>Last name</h5>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="username" placeholder="Your Username" required>
+                                    <label for="username" class="form-label text-black">Enter Last Username</label>
+                                </div>
+                            </div>
+                            <div class="birth my-2">
+                                <h5>Your Birth of Date</h5>
+                                <div class="form-floating mb-2">
+                                    <input type="date" class="form-control" id="date" placeholder="Birth of Date" required>
+                                    <label for="date" class="form-label text-black">Birth of Date</label>
+                                </div>
+                            </div>
+                            <div class="color my-2">
+                                <h5>Favorite Color</h5>
+                                <div class="form-floating mb-2 col-5">
+                                    <input type="color" class="form-control" id="color" placeholder="Favorite color">
+                                    <label for="color" class="form-label text-black">Colors</label>
+                                </div>
+                            </div>
+                            <div class="password col-md-12">
+                                <h5>Password</h5>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="password" placeholder="Your Password" required>
+                                    <label for="password" class="form-label text-black">Enter Your Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary mt-3" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary mt-3">Log In</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- <----------------Section1------------------->
+    <section class=" bg-dark text-light p-5 p-lg-0 text-sm-start ">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>I Am The Best <span class="text-warning">Developer</span></h1>
+            <p class="lead my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nostrum. Alias, quisquam eveniet mollitia excepturi asperiores maiores, dolorem, perspiciatis repellat autem suscipit ex et temp.</p>
+            <button type="button" class="btn btn-warning" >Start The Project</button>
+          </div>
+          <img src="IMAGE/NewTux.svg.png" alt="Linux" class="img-fluid w-25 d-none d-md-block">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <------------Section2--------------->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+          <h3 class="mb-md-0">Sing Up For Free</h3>
+
+          <div class="input-group new-width">
+            <input type="email" class="form-control" placeholder="Enter Email">
+            <button class="btn btn-dark btn-lg" type="button" id="button2">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- <------------------Section3---------------->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-3">
+
+          <div class="col-md">
+            <div class="card">
+              <img src="IMAGE/py.jpg" class="card-img-top" alt="Python">
+              <div class="card-body text-start">
+                <h4 class="card-title">Python</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit quas possimus error harum, dolorum commodi at est! Dolor amet nobis deleniti odio dignissimos eveniet iste enim ullam similique nisi.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card">
+              <img src="IMAGE/py.jpg" class="card-img-top" alt="Python">           
+              <div class="card-body text-start">
+                <h4 class="card-title">Python</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet elit. Consequuntur aspernatur eum voluptatibusassumenda ducimus? Sit dignissimos perferendis temporibus inventore aliquid consequuntur. Voluptas, architecto!</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card">
+              <img src="IMAGE/py.jpg" class="card-img-top" alt="Python">           
+              <div class="card-body text-start">
+                <h4 class="card-title">Python</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur cat dfjldjaldlfda adipisicing elit. Sunt error autem enim beatae magnam tempore, cumjfljldgjsl officiis ab aliquam quisquam, eaque praesentium debitis eos?</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="bg-primary mt-3 row text-white"> -->
+        <!-- <form action="#" class="row p-2 col-md-6 text-white gap-3"> -->
+            <!-- <div class="mb-3 col-sm-3 col-md-6">
+                <label for="name" class="form-label">Username</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3 col-sm-3 col-md-6">
+                <label for="name" class="form-label">Username</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3 col-sm-3 col-md-6">
+                <label for="name" class="form-label">Username</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3 col-sm-3 col-md-6">
+                <label for="name" class="form-label">Username</label>
+                <input type="text" class="form-control" id="name">
+            </div> -->
+        <!-- </form> -->
+    <!-- </div> -->
+
+    <!-- _______modal________________ -->
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           I love you
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</html>
